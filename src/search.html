@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <title> CarMart - Search </title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <a href="../src/index.html"> Home </a>
+                <a href="../src/form.html"> Insert </a>
+                <a href="../src/alter.html"> Modify </a>
+                <a href="../src/search.html"> Search </a>
+            </div>
+        </header>
+        <h2> Find a Vehicle or Search an Seller! </h2>
+        <div class="centered_container">
+            <div class="search_container">
+                <form action="../php/searchVehicle.php" method="post">
+                    <label for="vehicleSearch" class="input_label"> Search a Vehicle </label>
+                    <div class="input_container">
+                        <input type="text" name="make" id="vehicleSearch" class="input" placeholder="Enter a vehicle make...">
+                        <button id="vsSubmit" class="submit_button"> Search </button>
+                    </div>
+                </form>
+                <form action="../php/searchOwner.php" method="post">
+                    <label for="sellerSearch" class="input_label"> Search a Seller </label>
+                    <div class="input_container">
+                        <input type="text" name="lastName" id="sellerSearch" class="input" placeholder="Enter the sellers last name...">
+                        <button id="ssSubmit" class="submit_button"> Search </button>
+                    </div>
+                </form>
+                <a class="display_button" href="../php/display.php"> Display All Vehicles </a>
+            </div>
+        </div>
+    </body>
+</html>

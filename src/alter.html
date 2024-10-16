@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <title> CarMart - Modify </title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <a href="../src/index.html"> Home </a>
+                <a href="../src/form.html"> Insert </a>
+                <a href="../src/alter.html"> Modify </a>
+                <a href="../src/search.html"> Search </a>
+            </div>
+        </header>
+        <h2> Update or Delete Information! </h2> <br>
+        <h3> Remove or Unlist </h3>
+        <div class="centered_container">
+            <div class="search_container">
+                <form action="../php/removeVehicle.php" method="post">
+                    <label for="removeVehicle" class="input_label"> Unlist a Vehicle </label>
+                    <div class="input_container">
+                        <input type="text" name="vehicleID" id="removeVehicle" class="input" placeholder="Enter a vehicle ID...">
+                        <button id="rmSubmit" class="submit_button"> Search </button>
+                    </div>
+                </form>
+                <form action="../php/removeOwner.php" method="post">
+                    <label for="removeOwner" class="input_label"> Remove a Seller </label>
+                    <div class="input_container">
+                        <input type="text" name="ownerID" id="removeOwner" class="input" placeholder="Enter a seller ID...">
+                        <button id="rsSubmit" class="submit_button"> Search </button>
+                    </div>
+                </form>
+            </div>
+        </div> 
+        <h3> Update a Vehicle </h3>
+        <div class="centered_container">
+            <div class="contact_container">
+                <div class="contact_form">
+                    <form id="contactForm" action="../php/updateVehicle.php" method="post">
+                        <center>
+                            <table>
+                                <tr>
+                                    <td colspan="4" class="header"> Vehicle Information </td>
+                                </tr>
+                                <tr>
+                                    <td> <label> Vehicle ID: </label> </td>
+                                    <td> <input type="text" name="vehicleID" maxlength="30" size="30"> </td>
+                                    <td colspan="2"> <label> [Update vehicle with the follwoing information] </label> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label> Make: </label> </td>
+                                    <td>
+                                        <select name="make">
+                                            <option value="Audi"> Audi </option>
+                                            <option value="BMW"> BMW </option>
+                                            <option value="Ford"> Ford </option>
+                                            <option value="Honda"> Honda </option>
+                                            <option value="Mazda"> Mazda </option>
+                                            <option value="Toyota"> Toyota </option>
+                                            <option value="Volvo"> Volvo </option>
+                                        </select>
+                                    </td>
+                                    <td> <label> Model: </label> </td>
+                                    <td> <input type="text" name="title" maxlength="30" size="30"> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label> Year: </label> </td>
+                                    <td> <input type="text" name="year" maxlength="4" size="30"> </td>
+                                    <td> <label> Mileage: </label> </td>
+                                    <td> <input type="text" name="mileage" maxlength="7" size="30"> </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="header"> Registration </td>
+                                </tr>
+                                <tr>
+                                    <td> <label> Id Number: </label> </td>
+                                    <td> <input type="text" name="regnumber" maxlength="10" size="30"> </td>
+                                    <td> <label> Sale Price: </label> </td>
+                                    <td> <input type="text" name="price" maxlength="10" size="30"> </td>
+                                </tr>
+                            </table>
+                        </center>
+                        <input type="submit" value="Update Vehicle">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <h3> Update a Seller </h3>
+        <div class="centered_container">
+            <div class="contact_container">
+                <div class="contact_form">
+                    <form id="contactForm" action="../php/updateOwner.php" method="post">
+                        <center>
+                            <table>
+                                <tr>
+                                    <td colspan="4" class="header"> Seller Information </td>
+                                </tr>
+                                <tr>
+                                    <td> <label> Owner ID: </label> </td>
+                                    <td> <input type="text" name="ownerID" maxlength="30" size="30"> </td>
+                                    <td colspan="2"> <label> [Update Seller with the follwoing information] </label> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label> First Name: </label> </td>
+                                    <td> <input type="text" name="fname" maxlength="30" size="30"> </td>
+                                    <td> <label> Last Name: </label> </td>
+                                    <td> <input type="text" name="lname" maxlength="30" size="30"> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label> Email: </label> </td>
+                                    <td> <input type="text" name="email" maxlength="30" size="30"> </td>
+                                    <td> <label> Phone: </label> </td>
+                                    <td> <input type="text" name="phone" maxlength="10" size="30"> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label> Street: </label> </td>
+                                    <td> <input type="text" name="street" maxlength="30" size="30"> </td>
+                                    <td> <label> City: </label> </td>
+                                    <td> <input type="text" name="city" maxlength="30" size="30"> </td>
+                                </tr>
+                                <tr>
+                                    <td> <label> State: </label> </td>
+                                    <td> <input type="text" name="state" maxlength="2" size="30"> </td>
+                                    <td> <label> Postal: </label> </td>
+                                    <td> <input type="text" name="postal" maxlength="5" size="30"> </td>
+                                </tr>
+                            </table>
+                        </center>
+                        <input type="submit" value="Update Seller">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
