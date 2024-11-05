@@ -3,31 +3,31 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../styles/style.css">
-        <link rel="icon" href="../images/Carmart_logo.png">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="icon" href="images/Carmart_logo.png">
         <title> CarMart - Modify </title>
     </head>
     <body>
         <header>
             <div class="navbar">
-                <a href="../src/index.html"> Home </a>
-                <a href="../src/form.html"> Insert </a>
-                <a href="../src/alter.html"> Modify </a>
-                <a href="../src/search.html"> Search </a>
+                <a href="index.html"> Home </a>
+                <a href="form.html"> Sell </a>
+                <a href="alter.html"> Modify </a>
+                <a href="search.html"> Search </a>
             </div>
         </header>
         <h2> Update or Delete Information! </h2> <br>
         <h3> Remove or Unlist </h3>
         <div class="centered_container">
             <div class="search_container">
-                <form action="../php/removeVehicle.php" method="post">
+                <form action="php/removeVehicle.php" method="post">
                     <label for="removeVehicle" class="input_label"> Unlist a Vehicle </label>
                     <div class="input_container">
                         <input type="text" name="vehicleID" id="removeVehicle" class="input" placeholder="Enter a vehicle ID...">
                         <button id="rmSubmit" class="submit_button"> Search </button>
                     </div>
                 </form>
-                <form action="../php/removeOwner.php" method="post">
+                <form action="php/removeOwner.php" method="post">
                     <label for="removeOwner" class="input_label"> Remove a Seller </label>
                     <div class="input_container">
                         <input type="text" name="ownerID" id="removeOwner" class="input" placeholder="Enter a seller ID...">
@@ -40,7 +40,7 @@
         <div class="centered_container">
             <div class="contact_container">
                 <div class="contact_form">
-                    <form id="contactForm" action="../php/updateVehicle.php" method="post">
+                    <form id="contactForm" action="php/updateVehicle.php" method="post">
                         <center>
                             <table>
                                 <tr>
@@ -93,7 +93,7 @@
         <div class="centered_container">
             <div class="contact_container">
                 <div class="contact_form">
-                    <form id="contactForm" action="../php/updateOwner.php" method="post">
+                    <form id="contactForm" action="php/updateOwner.php" method="post">
                         <center>
                             <table>
                                 <tr>
