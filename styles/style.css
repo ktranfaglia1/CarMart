@@ -137,10 +137,10 @@ label {
   justify-content: center;
 }
 .nav_button {
-  margin: 30px 60px;
-  width: 400px;
-  height: 125px;
-  padding-top: 75px;
+  margin: 20px 60px;
+  width: 360px;
+  height: 90px;
+  padding-top: 60px;
   font-size: 28px;
   border: 2px solid black;
   cursor: pointer;
